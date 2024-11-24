@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enrolls",
+  "info": {
+    "singularName": "enroll",
+    "pluralName": "enrolls",
+    "displayName": "Enroll",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "string"
+    },
+    "paymentType": {
+      "type": "string"
+    },
+    "transactionUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "enrollmentDate": {
+      "type": "date"
+    },
+    "expiryDate": {
+      "type": "date"
+    },
+    "Enrollment_status": {
+      "type": "string"
+    },
+    "contentId": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    }
+  }
+}

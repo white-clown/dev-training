@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sm_videos",
+  "info": {
+    "singularName": "sm-video",
+    "pluralName": "sm-videos",
+    "displayName": "SmVideo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "sm_video"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::like.like",
+      "mappedBy": "sm_video"
+    },
+    "views": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::view.view",
+      "mappedBy": "sm_video"
+    },
+    "video_list": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::video.video",
+      "inversedBy": "sm_videos"
+    },
+    "is_watched": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

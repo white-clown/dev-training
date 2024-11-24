@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_video_course_course_includes",
+  "info": {
+    "displayName": "courseInclude"
+  },
+  "options": {},
+  "attributes": {
+    "course": {
+      "type": "text"
+    }
+  }
+}
